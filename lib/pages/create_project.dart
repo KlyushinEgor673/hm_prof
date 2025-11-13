@@ -20,6 +20,13 @@ class _CreateProjectState extends State<CreateProject> {
       backgroundColor: Colors.white,
       body: Column(
         children: [
+          Container(
+            margin: EdgeInsets.only(top: heightScreen * (58 / 812)),
+            child: Text('Создать проект', style: TextStyle(
+              fontWeight: FontWeight.w600,
+              fontSize: 20
+            ),),
+          ),
           Expanded(
             child: ListView(
               children: [
@@ -70,6 +77,26 @@ class _CreateProjectState extends State<CreateProject> {
                   },
                 ),
               ],
+            ),
+          ),
+          Container(
+            width: widthScreen * (335 / 375),
+            height: heightScreen * (56 / 812),
+            margin: EdgeInsets.symmetric(horizontal: widthScreen * (20 / 375),
+            vertical: heightScreen * (32 / 812)),
+            decoration: BoxDecoration(
+              color: Color.fromRGBO(26, 111, 238, 1),
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: Center(
+              child: Text(
+                'Подтвердить',
+                style: TextStyle(
+                  fontSize: 17,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.white,
+                ),
+              ),
             ),
           ),
           CustomNavBar(active: 3),
