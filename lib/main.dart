@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hm_prof/pages/cart.dart';
 import 'package:hm_prof/pages/catalog.dart';
+import 'package:hm_prof/pages/create_project.dart';
 import 'package:hm_prof/pages/head.dart';
 import 'package:hm_prof/pages/projects.dart';
 
@@ -27,6 +28,11 @@ void main() {
           case '/cart':
             return PageRouteBuilder(
               pageBuilder: (_, __, ___) => Cart(),
+              transitionDuration: Duration.zero,
+            );
+          case '/create_project':
+            return PageRouteBuilder(
+              pageBuilder: (_, __, ___) => CreateProject(),
               transitionDuration: Duration.zero,
             );
         }

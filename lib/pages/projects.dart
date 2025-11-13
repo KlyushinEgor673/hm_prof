@@ -36,7 +36,9 @@ class Projects extends StatelessWidget {
                 Positioned(
                     top: heightScreen * (6 / 812),
                     right: widthScreen * (6 / 375),
-                    child: SvgPicture.asset('images/add.svg'))
+                    child: GestureDetector(child: SvgPicture.asset('images/add.svg'), onTap: (){
+                      Navigator.pushNamed(context, '/create_project');
+                    },))
               ],
             ),
           ),
